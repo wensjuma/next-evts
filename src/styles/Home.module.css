@@ -276,3 +276,24 @@
     transform: rotate(0deg);
   }
 }
+.footer{
+  background-color: #3e1717 !important;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+.navheader{
+  padding: 8px !important;
+  margin-left: 5px !important;
+  
+}
+
+.navheader >  ul  {
+  display: flex !important;
+  list-style: none !important;
+  gap: 15px;
+  color: #090909;
+  font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none !important;
+}
