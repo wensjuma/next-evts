@@ -10,9 +10,9 @@ import React from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ data }) {
-  const date = new Date()
+  // const date = new Date()
 
-  data['date'] = date
+  // data['date'] = date
   return (
     <div className={styles.container}>
       <Head>

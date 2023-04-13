@@ -1,18 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import SingleEvent from '@/components/events/singleEvent';
 
 const ViewEventsCatPage = ({ data }) => {
     return (
-        <div>
-            <h3>
-                {data.title}
-            </h3>
-            <Image width={1000} height={500} alt={data.id} src={data.image} />
-            <h2> {data.title}</h2>
-            <p>
-                {data.description}
-            </p>
-        </div>
+        <SingleEvent data={data} />
     )
 }
 

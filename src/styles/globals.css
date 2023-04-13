@@ -97,6 +97,7 @@ body {
 }
 header {
   height: 150px !important;
+  padding: 15px 30px;
   background: linear-gradient(305deg, #dbfff3, transparent) !important;
   /* background-color: #dbfff3; */
 }
@@ -125,7 +126,7 @@ main {
   max-width: 1250px;
   margin: auto !important;
   padding: 100px 30px !important;
-  min-height: 550px ;
+  min-height: 550px;
 }
 .homeBody {
   display: flex !important;
@@ -145,7 +146,6 @@ main {
   /* flex-direction: ; */
 }
 
-
 .homeBody > .image {
   width: 50%;
 }
@@ -155,21 +155,95 @@ main {
 .homeBody > .content {
   width: 50%;
 }
-.homeBody{
+.homeBody {
   display: flex !important;
   direction: row !important;
 }
 
-.content-about{
+.content-about {
   display: flex;
   direction: row;
   margin: 8px;
   padding: 10px;
   list-style: none;
 }
+.all_events_body {
+  display: flex;
+  direction: row;
+  gap: 10px;
+}
+
+.image_events {
+  position: relative;
+}
+.image_events .eventContent {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  font-size: 25pt;
+  color: white;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 20px black;
+}
+.town_events{
+  width: 100%;
+ 
+}
+.town_events .content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(100% - (30px * 3));
+  gap: 30px;
+  margin-right: 0;
+  width: 100%;
+  justify-content: flex-start;
+  border: 1px #deeff6 solid;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #eaf3f7;
+}
+.town_events.card {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.desc {
+  width: fit-content;
+  font-size: 11px;
+}
+.pageTitle{
+  text-align: center;
+  margin-bottom: 20px;
+
+}
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+.btn{
+  padding: 7px;
+  background-color: #057eb2 ;
+  border: none;
+  border-radius: 4px;
+  width: 15%;
+  color: white;
+}
+.btn:hover{
+  background-color: #033246 ;
+  cursor: pointer;
+ 
+}
+.email{
+  padding: 7px;
+  border: 1px solid #d7f0fb;
+  border-radius: 4px;
+  width: 25%;
+  min-width: 200px;
+}
+.email:focus{
+  border: 1px solid #d7f0fb;
 }

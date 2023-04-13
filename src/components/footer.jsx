@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from '@/styles/Home.module.css'
 export default function Footer({ data }) {
-    console.log(data);
+    // console.log(data);
     return (
 
         <div className={styles.footer}>
